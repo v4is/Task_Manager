@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Add Task</h1>
+    <form method="post">
+        <label for="title">Title</label>
+        <input type="text" id="title" name="title" required>
+        <label for="category">Category</label>
+        <input type="text" id="category" name="category" required>
+        <label for="due_date">Due Date</label>
+        <input type="date" id="due_date" name="due_date" required>
+        <button type="submit">Add Task</button>
+    </form>
+{% endblock %}
